@@ -21,6 +21,9 @@ my_image_detail.save("after_detail.png",'png')
 my_image_emboss = my_image.filter(ImageFilter.EMBOSS)
 my_image_emboss.save("after_emboss.png",'png')
 
+my_image_find_edges = my_image.filter(ImageFilter.FIND_EDGES)
+my_image_find_edges.save("after_find_edges.png",'png')
+
 # convert into black and white old looking
 my_image_bnw = my_image.convert('LA')
 my_image_bnw.save('bnws.jpg','png')
